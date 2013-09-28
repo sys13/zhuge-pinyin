@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block headOptional %}
+
+
+{% endblock %}
+
+{% block page %}
+     <form name="myForm" action="{% url 'add_user_text' %}" method="post">{% csrf_token %}
+         <input name="user_text">
+     </form>
+{% endblock %}

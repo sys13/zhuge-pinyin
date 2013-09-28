@@ -1,0 +1,31 @@
+{% load staticfiles %}
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+{# It's important for the DOCTYPE to be the first part of this document, before even comments and maybe whitespace. #}
+{# As of now, only the load is allowed to go first. #}
+{#<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">#}
+<!--You might have to update the template directory-->
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="keywords" content=""/>
+    <meta name="description" content=""/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link rel="shortcut icon" href="{{ STATIC_URL }}img/icons/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="{{ STATIC_URL }}img/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/style.css" type="text/css" media="screen"/>
+    <script src="{{ STATIC_URL }}js/jquery-1.9.1.js"></script>
+    <script src="{{ STATIC_URL }}js/jquery-ui-1.10.2.custom.min.js"></script>
+    <title>ZhugeDanni - {% block title %}{% endblock %}</title>
+    {% block headOptional %}
+    {% endblock %}
+    <script src="{{ STATIC_URL }}js/ajax_csrf.js"></script>
+    <link rel="stylesheet" href="{{ STATIC_URL }}css/jquery-ui.css" />
+</head>
+
+<body>
+
+{% block page %}
+
+{% endblock page %}
+</body>
+</html>

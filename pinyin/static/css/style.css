@@ -1,0 +1,25 @@
+.current_word {
+    border: 2px solid;
+}
+
+.current_character {
+    border: 4px blue;
+}
+
+.correctWord {
+    background-color: limegreen;
+}
+
+.incorrectWord {
+    background-color: tomato;
+}
+
+#performance_feedback {
+    width: 100%;
+    height: 40px;
+
+}
+
+#finished {
+    display: none;
+}
